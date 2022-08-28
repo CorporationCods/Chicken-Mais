@@ -7,22 +7,32 @@
     <title>Document</title>
     <style>
         body{
-             background-color: rgb(19, 6, 1);
+            background-color: rgb(19, 6, 1);
         }
      .card-container img{
-    width: 20rem ;
+        width: 20rem ;
 }
 
 .card-container{
     display: grid;
-   grid-template-columns: 1fr;
-   justify-content:center ;
- 
- 
+    grid-template-columns: 1fr;
+    justify-content:center ;
+    -webkit-transition:all 1s ease;
+    -webkit-transform-style: preserve-3d;
 
 }
 
+.card-front{
+    grid-area: 1/1;
+    -webkit-transform: rotateY(-180deg);
+    z-index: 2 1 ;
+    -webkit-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
 
+.card-back{
+    grid-area: 1/1 ;
+}
 
 .cards-section{
     display: flex;
@@ -35,9 +45,9 @@
     perspective: 1000px;
 }
 
-
-   
-
+.card:hover .card-container {
+    -webkit-transform: rotateY(180deg);
+}
 .h1
 {
     text-align: center;
@@ -45,24 +55,9 @@
     font-family: 'Times New Roman', Times, serif;
     
 }
-.icon img
-        {
-            margin:1rem ;
-    perspective: 1000px;
-            display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-              display: grid;
-   grid-template-columns: 1fr;
-   justify-content:center ;
-             width: 5rem
-        }
-        
     </style>
 </head>
 <body>
-    <div class="icon">
-        <img src="https://user-images.githubusercontent.com/112194107/187075910-e3b5ad65-db0a-4009-8e0c-14d22958852f.png">
     <div class="h1">
         <h1>Clique no nosso cardápio abaixo</h1>
     </div>
@@ -72,7 +67,9 @@
         <div class="card-front">
             <img src="https://user-images.githubusercontent.com/112194107/187046655-4a59ef27-1fe7-4688-8348-5ceb7e4d4fe0.png" alt="Cardápio">
         </div>
-  
+        <div class="card-back">
+         <img src="https://user-images.githubusercontent.com/112194107/187046904-c6cffcad-fd22-45f8-96b7-cecb27479db3.jpg">
+        </div>
         </div>
     </div>
   </section>
