@@ -13,41 +13,7 @@
     width: 20rem ;
 }
 
-.card-container{
-    display: grid;
-   grid-template-columns: 1fr;
-   justify-content:center ;
-   transition:all 1s ease;
-   transform-style: preserve-3d;
 
-}
-
-.card-front{
-    grid-area: 1/1;
-    transform: rotateY(-180deg);
-    z-index: 2 1 ;
-    backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-}
-
-.card-back{
-    grid-area: 1/1 ;
-}
-
-.cards-section{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.card{
-    margin:1rem ;
-    perspective: 1000px;
-}
-
-.card:hover .card-container {
-    transform: rotateY(180deg);
-}
 .h1
 {
     text-align: center;
@@ -65,13 +31,11 @@
     <div class="card">
     <div class="card-container">
         <div class="card-front">
-            <img src="https://user-images.githubusercontent.com/112194107/187046655-4a59ef27-1fe7-4688-8348-5ceb7e4d4fe0.png" alt="Cardápio"/>
-        </div>
-        <div class="card-back">
-         <img src="https://user-images.githubusercontent.com/112194107/187046904-c6cffcad-fd22-45f8-96b7-cecb27479db3.jpg">
-        </div>
+            <img src="https://user-images.githubusercontent.com/112194107/187046655-4a59ef27-1fe7-4688-8348-5ceb7e4d4fe0.png" alt="Cardápio">
         </div>
     </div>
+        </div>
+  
   </section>
 </body>
 </html>
