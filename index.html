@@ -19,7 +19,7 @@
     grid-template-columns: 1fr;
     justify-content:center ;
     transition:all 1s ease;
-    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
 
 }
 
@@ -27,13 +27,16 @@
     grid-area: 1/1;
     transform: rotateY(-180deg);
     z-index: 2 1 ;
-    -webkit-backface-visibility: hidden;
+   
+     backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
  
 }
 
 .card-back{
     grid-area: 1/1 ;
-    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 .cards-section{
@@ -44,11 +47,11 @@
 
 .card{
     margin:1rem ;
-    perspective: 1000px;
+    -webkit-perspective: 1000px;
 }
 
 .card:hover .card-container {
-    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
 }
 .h1
 {
